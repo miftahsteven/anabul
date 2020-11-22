@@ -20,9 +20,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="49e840c4-2bd6-4a66-a67e-89f4942a98a4" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/anabul.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/screens/appFooter.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/screens/profile.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/screens/story.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app.json" beforeDir="false" afterPath="$PROJECT_DIR$/app.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/screens/base.js" beforeDir="false" afterPath="$PROJECT_DIR$/screens/base.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/screens/detail.js" beforeDir="false" afterPath="$PROJECT_DIR$/screens/detail.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/screens/report.js" beforeDir="false" afterPath="$PROJECT_DIR$/screens/report.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -52,6 +62,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="js.ns.project" value="true" />
@@ -66,6 +77,11 @@
     <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/screens" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -77,6 +93,16 @@
       <workItem from="1605424199774" duration="872000" />
       <workItem from="1605447403894" duration="16437000" />
       <workItem from="1605588600256" duration="388000" />
+      <workItem from="1605590984762" duration="6629000" />
+      <workItem from="1605600256666" duration="12935000" />
+      <workItem from="1605677294277" duration="11878000" />
+      <workItem from="1605701563778" duration="67000" />
+      <workItem from="1605748902807" duration="1399000" />
+      <workItem from="1605933701317" duration="14376000" />
+      <workItem from="1605952660333" duration="7369000" />
+      <workItem from="1606002996452" duration="114000" />
+      <workItem from="1606022449378" duration="167000" />
+      <workItem from="1606023087650" duration="5450000" />
     </task>
     <servers />
   </component>
@@ -112,5 +138,9 @@
       <screen x="0" y="23" width="1440" height="820" />
     </state>
     <state x="320" y="173" key="Vcs.Push.Dialog.v2/0.23.1440.820@0.23.1440.820" timestamp="1605424978188" />
+    <state x="421" y="188" width="605" height="490" key="find.popup" timestamp="1605668288649">
+      <screen x="0" y="23" width="1440" height="820" />
+    </state>
+    <state x="421" y="188" width="605" height="490" key="find.popup/0.23.1440.820@0.23.1440.820" timestamp="1605668288649" />
   </component>
 </project>

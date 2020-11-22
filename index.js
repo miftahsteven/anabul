@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import { AppRegistry } from 'react-native';
 import App from './App.js';
-export default class RnrfExample extends Component {
+export default class RnrfEx extends Component {
     render() {
         return (
             <App />
         );
     }
 }
-AppRegistry.registerComponent('mytourapp', () => RnrfExample);
+AppRegistry.registerComponent('mytourapp', () => RnrfEx);
