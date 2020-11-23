@@ -8,20 +8,24 @@ import Story from "./screens/story";
 import Profile from "./screens/profile";
 import AppFooter from "./screens/appFooter";
 import detail from "./screens/detail";
+import camera from "./screens/Camera"
+
 export default class App extends Component {
+
+
   render() {
-  const iconProfile = () => (
-      <Icon style={{color:'#67688f', fontSize:20}} name='user-alt' type="FontAwesome5"/>
-  )
-  const iconReport = () => (
-      <Icon style={{color:'#67688f', fontSize:20}} name='shield-alt' type="FontAwesome5"/>
-  )
-  const iconBase = () => (
-      <Icon style={{color:'#67688f', fontSize:20}} name='home' type="FontAwesome5"/>
-  )
-  const iconStory = () => (
-      <Icon style={{color:'#67688f', fontSize:20}} name='medal' type="FontAwesome5"/>
-  )
+      const iconProfile = () => (
+          <Icon style={{color:'#67688f', fontSize:20}} name='user-alt' type="FontAwesome5"/>
+      )
+      const iconReport = () => (
+          <Icon style={{color:'#67688f', fontSize:20}} name='shield-alt' type="FontAwesome5"/>
+      )
+      const iconBase = () => (
+          <Icon style={{color:'#67688f', fontSize:20}} name='home' type="FontAwesome5"/>
+      )
+      const iconStory = () => (
+          <Icon style={{color:'#67688f', fontSize:20}} name='medal' type="FontAwesome5"/>
+      )
     return (
         <Container>
             <Header style={{backgroundColor:'#67688f'}}>
@@ -45,6 +49,7 @@ export default class App extends Component {
                   </Scene>
                   <Scene hideNavBar={true}>
                       <Scene key="detail" component={detail} hideTabBar={true}/>
+                      <Scene key="camera" component={camera} hideTabBar={true}/>
                   </Scene>
               </Scene>
             </Router>

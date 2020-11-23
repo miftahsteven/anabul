@@ -15,9 +15,9 @@ import {
     Thumbnail,
     Footer,
     Root,
-    Title, Header, Badge, Form, Item, Label, Textarea, Picker
+    Title, Header, Badge, Form, Item, Label, Textarea, Picker, List, ListItem
 } from 'native-base';
-import { Actions } from 'react-native-router-flux';
+import {ActionConst, Actions} from 'react-native-router-flux';
 import {Image,  StyleSheet, ScrollView, Dimensions, Modal, Alert, TouchableHighlight} from "react-native";
 import {useFonts} from "expo-font";
 import MapView, {Marker} from 'react-native-maps';
@@ -26,11 +26,12 @@ import {Input} from "react-native-elements";
 
 export default class Report extends Component {
 
+
     constructor(props) {
         super(props);
         this.state={
             selected: undefined,
-            buttonDisabled: true
+            buttonDisabled: true,
         }
     }
 
@@ -41,6 +42,10 @@ export default class Report extends Component {
     }
 
     render() {
+        const iconTitle = () => (
+            <Icon style={{color:'#67688f', fontSize:20}} name='edit' type="FontAwesome5"/>
+        )
+
         return (
             <Root>
                 <Container>
@@ -53,8 +58,7 @@ export default class Report extends Component {
                     </Header>
                     <Content padder>
                         <Form>
-                            <Input placeholder="Judul" />
-                            <Textarea rowSpan={5} bordered placeholder="Deskripsi" />
+                            <Input placeholder="Judul" leftIcon={iconTitle} />
                             <Card>
                                 <CardItem>
                                     <Text>Silahkan Pilih</Text>
@@ -87,15 +91,32 @@ export default class Report extends Component {
                                     </Picker>
                                 </CardItem>
                             </Card>
+                            <Textarea rowSpan={5} bordered placeholder="Ceritakan " />
                             <Item bordered>
                                 <Text>Upload Gambar</Text>
-                                <CardItem>
-                                    <Card>
-                                        <Button info style={{borderRadius: 10}}>
+                                <Card transparent>
+                                    <CardItem>
+                                        <Button info rounded onPress={() => {
+                                            Actions.camera({type:ActionConst.REPLACE});
+                                        }}>
                                             <Icon name="camera" type="AntDesign" />
                                         </Button>
-                                    </Card>
-                                </CardItem>
+                                    </CardItem>
+                                </Card>
+                            </Item>
+                            <Item>
+                                <Content>
+                                    <List>
+                                        <ListItem thumbnail noBorder>
+                                            <Thumbnail square style={{marginRight: 10}} source={{ uri: 'https://images.livemint.com/rf/Image-621x414/LiveMint/Period1/2015/01/17/Photos/catindelhi-kkND--621x414@LiveMint.jpg' }} />
+                                            <Thumbnail square style={{marginRight: 10}} source={{ uri: 'https://undark.org/wp-content/uploads/2020/02/GettyImages-1199242002-1-scaled.jpg' }} />
+                                            <Thumbnail square style={{marginRight: 10}} source={{ uri: 'https://www.albugle.com/wp-content/uploads/2019/02/cat.jpg' }} />
+                                            <Thumbnail square style={{marginRight: 10}} source={{ uri: 'https://images.livemint.com/rf/Image-621x414/LiveMint/Period1/2015/01/17/Photos/catindelhi-kkND--621x414@LiveMint.jpg' }} />
+                                            <Thumbnail square source={{uri: `data:image/jpeg;base64,${this.props.imageBase64}`}} />
+
+                                        </ListItem>
+                                    </List>
+                                </Content>
                             </Item>
                             <Button full style={{marginTop: 50, borderRadius: 10}} disabled={this.state.disabledButton}>
                                 <Icon name="send" type="Ionicons" />
